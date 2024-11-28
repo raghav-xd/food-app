@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  background-color: black;
 }
 
 code {
@@ -13,84 +14,176 @@ code {
     monospace;
 }
 
-
-
-.navbar{
-  display:flex;
-  border:2px solid black;
+/* Navbar styles */
+.navbar {
+  display: flex;
+  border: 2px solid grey;
   justify-content: space-between;
-  /* background-color: black; */
-  /* box-shadow: 2px solid green; */
-
+  padding: 10px;
+  background-color: black;
 }
-.logo{
+
+.logo {
   display: flex;
   height: 100px;
   padding-left: 20px;
+  
 }
 
-.nav-items > ul{
+.nav-items > ul {
   display: flex;
   padding-right: 30px;
-  
 }
-.nav-items> ul> li{
-  padding:10px;
+
+.nav-items > ul > li {
+  padding: 10px;
   margin: 10px;
+  color: white;
   text-decoration: none;
   list-style-type: none;
+  transition: color 0.3s ease; /* Smooth transition for color */
 }
 
-.nav-items> ul> li:hover{
-  
-   text-decoration: underline;
-   cursor: pointer;
-
+.nav-items > ul > li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #f0f0f0; /* Change color on hover */
 }
 
-.restrucon{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* background-color:rgb(247, 239, 239); */
-  
-}
-.restru-heading{
-  display: flex;
-  padding-left: 80px;
-}
-.res-cards{
-  width:200px;
-  height:400px;
-  /* border:2px solid black; */
-  margin: 15px 15px 15px 15px;
-}
-.res-cards>h3{
-  margin-top: 10px;
-}
-.res-cards>h4{
- display: flex;
- padding-left: 10px;
-}
-
-
-.res-cards>img{
-  width:200px;
-  height:150px;
-  /* border: 2px solid black; */
-  border-radius: 10px solid;
-  
-}
-.res-cards:hover{
-  border:2px solid black;
+.login-Btn{
+  margin-top: 20px;
+  height: 25px;
+  width:60px;
   cursor: pointer;
 }
 
-.filter-btn{
-  margin-left: 2px;
+.Search{
+   /* border: 2px solid white; */
+   
 }
 
+.search-btn{
+  margin-left: 10px;
+}
+.Search-box{
+  height:25px;
+  width:250px;
+  border-radius: 10px;
+  margin-left:200px;
+  margin-top: 18px;
+}
+/* Body Section */
+.body-con1{
+  display: flex;
+  /* border: 2px solid red; */
+}
+.restrucon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+}
+.fiter-btn{
+  /* padding:10px 15px;
+  margin-right:10px; */
+  display: flex;
+  margin-left: 80px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+.restru-heading {
+  display: flex;
+  padding-left: 80px;
+  color: rgb(210, 183, 133);
+  margin-bottom: 20px;
+  animation: slideInFromLeft 1.5s ease-out;
+}
 
+.res-cards {
+  width: 260px;
+  height: 380px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  margin: 15px;
+  color: white;
+  /* background-color: #3a3a3a; */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+/* Card hover effects */
+.res-cards:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  cursor: pointer;
+  border-color: white;
+}
 
+/* Card heading styles */
+.res-cards > h3 {
+  margin-top: 10px;
+  /* display: flex; */
+  /* margin-left: 20px; */
+  color: rgb(203, 183, 142);
+  
+}
+
+.res-cards > h4 {
+  display: flex;
+  padding-left: 10px;
+}
+
+/* Card image styles */
+.res-cards > img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  /* transition: transform 0.3s ease;  */
+}
+
+/* Hover effect for image scaling */
+.res-cards:hover > img {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.loading {
+  font: white;
+  font-size: 500px;
+}
+
+.shimmer-container{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.shimmer-cards {
+  color:white;
+  width: 260px;
+  height: 380px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 150px 15px 15px 15px;
+  align-items: center;
+  
+}
+/* 
+/* Animation for fading in the content */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);  
+    opacity: 0;  
+  }
+  100% {
+    transform: translateX(0);  
+    opacity: 1;  
+  }
+}
 

@@ -1,29 +1,25 @@
 
  const reslist=[
-{
-    //   {
-    //   type:"restru",
-    //   data:{
-    //     id:"34378",
-    //     name:"haldirams",
-    //     city:"Bathinda",
-    //     area:"Ghoda chownk",
-    //     img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bdp4olgeh9Md0yG4_HSvISyNB259ow-g7Q&s",
-    //   },
-    //   rating:4.4,
-    // },
+   
     
-    // {
-    //   type:"restru",
-    //   data:{
-    //     id:"34379",
-    //     name:"Burger King",
-    //     city:"Bathinda",
-    //     area:"Ghoda chownk",
-    //     img:"https://www.shutterstock.com/image-vector/logo-famous-identity-city-style-600nw-2275679435.jpg",
-    //   },
-    //   rating:4.7,
-    // },
+    {
+      type:"restru",
+      info:{
+        id:"34379",
+        name:"Burger King",
+        city:"Bathinda",
+        "cuisines": [
+          "Burgers",
+          "Shakes",
+          "Desserts",
+        ],
+        "locality": "Bathinda",
+        areaName:"Ghoda chownk",
+        cloudinaryImageId:"972a37599772cdc7df93a0855ad87591",
+        "avgRating":4.7,
+      },
+    },
+    {
     "info": {
       "id": "751396",
       "name": "The Belgian Waffle Co.",
@@ -39,7 +35,27 @@
       "avgRating": 4.6,
          },
       
-  },
+     },
+
+  {
+      type:"restru",
+      info:{
+        id:"34378",
+        name:"haldirams",
+        locality: "1St Phase",
+        city:"Bathinda",
+        areaName:"Ghoda chownk",
+        "cuisines": [
+          "North Indian",
+          "Chinese",
+          "Desserts",
+          "South Indian",
+          "Sweets"
+        ],
+        cloudinaryImageId:"RX_THUMBNAIL/IMAGES/VENDOR/2024/8/5/acdb49d8-70da-4cab-a79c-1a60ba1ce985_919425.jpg",
+        avgRating:4.6,
+      },
+    },
   
     {
       "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
@@ -57,7 +73,7 @@
           "South Indian",
           "Sweets"
         ],
-        "avgRating": 4.3,
+        "avgRating": 3.8,
         "veg": true,
         "parentId": "45936",
         "avgRatingString": "4.3",
@@ -191,7 +207,7 @@
           "Desserts",
           "Bakery"
         ],
-        "avgRating": 4.6,
+        "avgRating": 3.9,
         "veg": true,
         "parentId": "30921",
         "avgRatingString": "4.6",
@@ -292,6 +308,23 @@
       },
       "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
     },
+
+    {
+      "info":{
+      "id": "11335",
+      "name": "Fingerlicious",
+      "cloudinaryImageId": "dhij7vibwvp7nlfrcz8q",
+      "locality": "Vikas Marg",
+      "areaName": "Laxmi Nagar",
+      "costForTwo": "₹250 for two",
+      "cuisines": [
+        "Desserts",
+        "Bakery",
+        "Snacks"
+      ],
+      "avgRating": 4.2,
+    }
+    },
   
     
     {
@@ -312,7 +345,7 @@
           "Salads",
           "Burgers"
         ],
-        "avgRating": 4.5,
+        "avgRating": 3.8,
         "veg": true,
         "parentId": "179881",
         "avgRatingString": "4.5",
@@ -430,7 +463,7 @@
             "Pizzas",
             "Fast Food"
           ],
-          "avgRating": 4.4,
+          "avgRating": 4.6,
           "parentId": "1738",
           "avgRatingString": "4.4",
           "totalRatingsString": "1.5K+",
@@ -546,7 +579,7 @@
             "Desserts",
             "Bakery"
           ],
-          "avgRating": 4.4,
+          "avgRating": 4.6,
           "veg": true,
           "parentId": "55230",
           "avgRatingString": "4.4",
@@ -639,6 +672,61 @@
         },
         "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
       },
+
+      {
+        "info": {
+          "id": "751396",
+          "name": "The Belgian Waffle Co.",
+          "cloudinaryImageId": "5116a385bac0548e06c33c08350fbf11",
+          "locality": "PANDAV NAGAR",
+          "areaName": "PATPARGANJ",
+          "costForTwo": "₹200 for two",
+          "cuisines": [
+            "Waffle",
+            "Desserts",
+            "Ice Cream"
+          ],
+          "avgRating": 4.6,
+             },
+          
+         },
+    
+      {
+          type:"restru",
+          info:{
+            id:"34378",
+            name:"haldirams",
+            locality: "1St Phase",
+            city:"Bathinda",
+            areaName:"Ghoda chownk",
+            "cuisines": [
+              "North Indian",
+              "Chinese",
+              "Desserts",
+              "South Indian",
+              "Sweets"
+            ],
+            cloudinaryImageId:"RX_THUMBNAIL/IMAGES/VENDOR/2024/8/5/acdb49d8-70da-4cab-a79c-1a60ba1ce985_919425.jpg",
+            avgRating:4.6,
+          },
+        },
+
+        {
+          "info":{
+          "id": "11335",
+          "name": "Fingerlicious",
+          "cloudinaryImageId": "dhij7vibwvp7nlfrcz8q",
+          "locality": "Vikas Marg",
+          "areaName": "Laxmi Nagar",
+          "costForTwo": "₹250 for two",
+          "cuisines": [
+            "Desserts",
+            "Bakery",
+            "Snacks"
+          ],
+          "avgRating": 4.2,
+        }
+        },
   
   ]
 

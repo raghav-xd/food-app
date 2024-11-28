@@ -1,9 +1,9 @@
 import { CDN_URL } from "../utils/constants";
 
-  
-const stylecard={
-    backgroundColor:"#f0f0f0",
-  };
+
+// const stylecard={
+//     backgroundColor:"#f0f0f0",
+//   };
   // const Rescard=({resdata})=>{
   //   return(
   //     <div className="res-cards" style={stylecard}>
@@ -19,13 +19,14 @@ const stylecard={
   
   const Rescard = ({resdata}) => {
     return (
-      <div className="res-cards" style={stylecard}>
+      <div className="res-cards" >
         <img className="card-img" src={CDN_URL+ resdata.info.cloudinaryImageId}/>
         
-        <h4>{resdata.info.name}</h4>
+        <h3>{resdata.info.name}</h3>
         <h5>{resdata.info.locality}</h5>
         <h5>{resdata.info.areaName }</h5>
         <h5>Deliery time-38 minutes</h5>
+        <h5>Rating-{resdata.info.avgRating}</h5>
         
       </div>
     );
